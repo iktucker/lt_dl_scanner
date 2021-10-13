@@ -1,0 +1,4 @@
+opencv_python==4.5.3.56
+pdf417decoder==1.0.8
+numpy==1.21.2
+Pillow==8.3.2
