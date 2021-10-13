@@ -25,3 +25,9 @@ Flip over the license and capture the front of the card.
 Click Save to Disk and await the success window.
 
 In PoR click customer dashboard, then click the "New From License" button to create a new customer from the scanned license. This is the same as the old ScanShell method.
+
+## Troubleshooting Tips
+
+First: It's supposed to look stuttery. I found that refreshing the camera view at the same rate as the cameras FPS resulted in greater than 20% CPU utilization, whereas my hack to limit refresh to a couple times a second lowered the utilization to 10%.
+
+If you find that some fields aren't scanning, check that the license_definition.json file is the same as the current WA state license definition. I used (https://www.dol.wa.gov/driverslicense/docs/barcodeCalibration-EDLEID-2017.pdf)[this document] as a reference. Maybe there is a newer one (or a similar file for your state).
