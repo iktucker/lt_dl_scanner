@@ -31,3 +31,12 @@ In PoR click customer dashboard, then click the "New From License" button to cre
 First: It's supposed to look stuttery. I found that refreshing the camera view at the same rate as the cameras FPS resulted in greater than 20% CPU utilization, whereas my hack to limit refresh to a couple times a second lowered the utilization to 10%.
 
 If you find that some fields aren't scanning, check that the license_definition.json file is the same as the current WA state license definition. I used (https://www.dol.wa.gov/driverslicense/docs/barcodeCalibration-EDLEID-2017.pdf)[this document] as a reference. Maybe there is a newer one (or a similar file for your state).
+
+## Make a Camera Box
+
+### Supplies
+
+- Arducam
+- Acrylic box
+- Mini led ring light
+
