@@ -1,0 +1,20 @@
+{
+    "licenseMap":
+    {
+        "DAQ" : "number",
+        "DAC": "firstName",
+        "DAD": "middleName",
+		"DCT": "firstMiddle",
+        "DCS": "lastName",
+        "DBA": "expiration",
+        "DBB": "birthdate",
+        "DAG": "addressStreet",
+        "DAI": "addressCity",
+        "DAJ": "addressState",
+        "DAK": "addressZIP",
+        "DBC": "sex",
+        "DAY": "eyecolor",
+        "DAU": "height",
+		"DAW": "weight"
+    }
+}
