@@ -56,7 +56,10 @@ Insert the USB cord through the back of the box and plug the PCB-end into the Ar
 
 Place the access panel on, probably taping it in place, and consider putting some labels on the box to instruct customers on usage.
 
+Plug it in to your computer, do some testing to make sure the lighting is alright and you're able to dial in your focus and exposure settings.
+
 
 ## Thanks
 Thanks for [Lumber Traders Inc](https://angelesmillwork.com) for paying me to assemble the software and hardware for this thing.
+
 Thanks to [Point of Rental](https://www.point-of-rental.com/) software for providing an updated OCR template file.
