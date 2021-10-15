@@ -2,9 +2,12 @@
 	"path" : "C:/POR/OCR",
 	"imgPath": "C:/POR/OCR/Default-A.jpg",
 	"dataPath": "C:/POR/OCR/DEFAULT.txt",
+	"frontImgResolution": [720, 405],
 	"camera": {
 		"focus": 240,
 		"autofocus": 0,
+		"autoexposure": 1,
+		"exposure": -5,
 		"resolution": {
 			"width": 1920,
 			"height": 1080

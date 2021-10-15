@@ -135,11 +135,6 @@ def saveToDisk():
     path = config['path']
     imgPath = config['imgPath']
     dataPath = config['dataPath']
-    
-    # Defaults
-    #path = "C:\POR\OCR"
-    #imgPath = "C:\POR\OCR\Default-A.jpg"
-    #dataPath = "C:\POR\OCR\DEFAULT.txt"
 
     print('Writing data to file')
 
@@ -148,7 +143,7 @@ def saveToDisk():
         csvTemplate = f.read()
 
     if ((frontImgCap.any()) and (len(decodedData) > 0)):
-        Image.fromarray(frontImgCap).save(imgPath, 'JPEG')
+        Image.fromarray(frontImgCap).resize(config['frontImgResolution']).save(imgPath, 'JPEG')
         with open(dataPath, "w") as text_file:
             text_file.write(csvTemplate.format(**dataDict))
 
@@ -237,6 +232,8 @@ camera.set(cv2.CAP_PROP_FRAME_WIDTH, config['camera']['resolution']['width'])
 camera.set(cv2.CAP_PROP_FRAME_HEIGHT, config['camera']['resolution']['height'])
 camera.set(cv2.CAP_PROP_AUTOFOCUS, config['camera']['autofocus'])
 camera.set(cv2.CAP_PROP_FOCUS, config['camera']['focus'])
+camera.set(cv2.CAP_PROP_AUTO_EXPOSURE, config['camera']['autoexposure'])
+camera.set(cv2.CAP_PROP_EXPOSURE, config['camera']['exposure'])
 
 while (mainWindow.wait_window):
     if (exitFlag): break
@@ -247,7 +244,7 @@ while (mainWindow.wait_window):
         break
 
     if ((time.utcnow() - cameraRefreshTime).microseconds >= 200000):
-        camera.set(cv2.CAP_PROP_FOCUS, 240)
+        camera.set(cv2.CAP_PROP_FOCUS, config['camera']['focus'])
         cameraRefreshTime = time.utcnow()
         frame_rgb = frame[:,:,::-1]
         img = ImageTk.PhotoImage(image=Image.fromarray(frame_rgb).resize([480, 270]))
