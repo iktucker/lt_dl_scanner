@@ -15,6 +15,7 @@
         "DBC": "sex",
         "DAY": "eyecolor",
         "DAU": "height",
-		"DAW": "weight"
+		"DAW": "weight",
+        "DBD": "issueDate"
     }
 }

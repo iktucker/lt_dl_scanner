@@ -1,1 +1,1 @@
-{number},{number},,{addressStreet},{addressCity},{addressState},{addressZIP},,{expiration},,{sex},,,,{firstName},{middleName},{lastName},,,,,{eyecolor},,{height},{weight},
+{number},{number},{firstName} {middleName} {lastName},{addressStreet},{addressCity},{addressState},{addressZIP},{issueDate},{expiration},{birthdate},{sex},,,,{firstName},{middleName},{lastName},,,,,{eyecolor},,{height},{weight},
