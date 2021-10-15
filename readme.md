@@ -45,7 +45,7 @@ If you find that some fields aren't scanning, check that the license_definition.
 - A ~3.5" x 3.7" acrylic Sheet to glue into the box (Hartnagels had a small bit laying around that I cut down to size)
 - Drill and some various drill bits
 
-### Notes
+### Assembly Notes/Instructions
 The acrylic box allows plenty of light in, which (as noted) is the main constraint in getting a good scan. If you're placing the box in a dark location consider getting an led ring light or a desk lamp.
 
 The linked box is 8" tall, placing the small acrylic square at 6" from the bottom allowed for a good platform for the Arducam to mount. I drilled a 1/2" hole into the center of the acrylic square (for the camera module to protrude through) and four tiny holes corresponding to the mounting locations for the Arducam. I also cut the box access panel in half(ish) to allow a space for the card to be inserted. Finally, I drilled a hole large enough for the Arducams USB cable to fit through (the small end) on the back of the box just above where I planned on mounting the camera. **Do all of this *before* assembly**
